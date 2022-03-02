@@ -13,7 +13,7 @@ const Formulario = ( props ) => {
         e.preventDefault();
 
         // Validar
-        if( cantidad <= 0 || plazo === 0 ){
+        if( cantidad <= 0 || plazo === 0 || plazo === '' ){
             setError( true );
             return;
         }
